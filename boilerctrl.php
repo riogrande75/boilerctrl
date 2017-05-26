@@ -55,6 +55,7 @@ while(1)
         fclose($bc);
         if($battperc<70){
                 if($debug) echo "Batterie nur $battperc %, daher nix heizen!\n";
+                setboiler(00);
                 sleep(10);
                 continue;
                 }
